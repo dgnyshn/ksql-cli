@@ -1,7 +1,7 @@
 package statements
 
 import (
-	config "../../configManagement"
+	config "../../init-config"
 	visualize "../../visuailize"
 	model "../model"
 	"bufio"

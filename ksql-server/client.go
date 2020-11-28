@@ -1,7 +1,7 @@
 package ksql_server
 
 import (
-	config "../configManagement"
+	env "../init-config"
 	"io"
 	"io/ioutil"
 	"net/http"
@@ -14,8 +14,8 @@ func NewRequest(method string, url string, request io.Reader) []byte {
 		panic(err)
 	}
 
-	if config.DefaultAuthentication != "" {
-		req.Header.Set("Authentication", config.DefaultAuthentication)
+	if env.DefaultAuthentication != "" {
+		req.Header.Set("Authentication", env.DefaultAuthentication)
 	}
 	req.Header.Set("Accept", "application/vnd.ksql.v1+json")
 

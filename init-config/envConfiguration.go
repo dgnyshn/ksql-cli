@@ -1,4 +1,4 @@
-package configManagement
+package init_config
 
 import (
 	"encoding/json"

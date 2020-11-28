@@ -2,7 +2,7 @@ package statements
 
 import (
 	rest ".."
-	config "../../configManagement"
+	config "../../init-config"
 	visualize "../../visuailize"
 	model "../model"
 	"bytes"
