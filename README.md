@@ -1,4 +1,4 @@
- # KSSQL-CLI 
+ # KSQL-CLI 
  
  The main purpose of this project is changing server connections on the fly and show status of server, also listing error details.
  
