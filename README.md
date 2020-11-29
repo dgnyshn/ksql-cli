@@ -1,14 +1,14 @@
  # KSQL-CLI 
  
 The main purpose is while supporting all features of ksql cli , at the same time listing errors and changing server connection on the fly. 
-
+Inspired from [docker-shell](https://github.com/c-bata/kube-prompt) and [ksql](https://github.com/confluentinc/ksql).
 
  
  ## Installation
  
 #### Build From The Source Code 
 
-You can build from the source code following this steps,
+You can build from the source code following those steps
 
 ```
 - git clone git@github.com:theLastAirbander/ksql-cli.git
