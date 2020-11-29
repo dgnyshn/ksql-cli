@@ -4,7 +4,15 @@
  
  ## Installation
  
- 
+#### Build From The Source Code 
+
+You can build from the source code following this steps,
+
+```
+- git clone git@github.com:theLastAirbander/ksql-cli.git
+- cd ksql-cli
+- sudo go build -o /usr/local/bin/ksql-cli .
+```
  
  # Meta
  
