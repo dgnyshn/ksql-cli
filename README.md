@@ -26,6 +26,13 @@ You can build from the source code following this steps,
 - Visualize response
 - Interactivity
 - Save environment details and change server connection on the fly
+
+## How to use 
+
+After install you can type 'ksql-cli' then you can start to use.
+
+[![asciicast](https://asciinema.org/a/wr3HFbuxEwGVoc9DhmesXwpDe.svg)](https://asciinema.org/a/wr3HFbuxEwGVoc9DhmesXwpDe)
+
  
  # Meta
  
