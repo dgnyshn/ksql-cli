@@ -1,4 +1,4 @@
-package init_config
+package initCfg
 
 import (
 	"encoding/json"

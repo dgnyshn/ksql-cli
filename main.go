@@ -2,7 +2,7 @@ package main
 
 import (
 	"./commands"
-	config "./init-config"
+	config "./initCfg"
 	serverStatus "./ksql-server/server"
 	streams "./ksql-server/statements"
 	"fmt"

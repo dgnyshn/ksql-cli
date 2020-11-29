@@ -1,7 +1,7 @@
 package ksql_server
 
 import (
-	env "../init-config"
+	env "../initCfg"
 	"io"
 	"io/ioutil"
 	"net/http"

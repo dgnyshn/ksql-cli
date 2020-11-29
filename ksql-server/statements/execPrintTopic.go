@@ -1,7 +1,7 @@
 package statements
 
 import (
-	config "../../init-config"
+	config "../../initCfg"
 	model "../model"
 	"bufio"
 	"bytes"

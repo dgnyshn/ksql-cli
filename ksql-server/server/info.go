@@ -2,7 +2,7 @@ package server
 
 import (
 	rest ".."
-	config "../../init-config"
+	config "../../initCfg"
 	visualize "../../visuailize"
 	model "../model"
 	"encoding/json"
