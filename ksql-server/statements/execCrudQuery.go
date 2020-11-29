@@ -22,7 +22,6 @@ func ExecuteCrudStatement(query string) {
 	var response [] model.CrudStatementResponse
 	err := json.Unmarshal(body, &response)
 
-	fmt.Println(string(body))
 	fmt.Println("-------------------------------------------")
 	if err != nil {
 		fmt.Println("Exception occurred while executeQuery response unmarshal")
