@@ -3,7 +3,7 @@ package main
 import (
 	"./commands"
 	config "./initCfg"
-	serverStatus "./ksql-server/server"
+	serverStatus "./ksql-server/server-detail"
 	streams "./ksql-server/statements"
 	"fmt"
 	"github.com/c-bata/go-prompt"

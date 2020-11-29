@@ -1,4 +1,4 @@
-package server
+package server_detail
 
 import (
 	rest ".."
