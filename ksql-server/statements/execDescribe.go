@@ -22,8 +22,7 @@ func ExecDescribe(query string) {
 	var response []model.DescribeResponse
 	err := json.Unmarshal(body, &response)
 
-	fmt.Println(string(body))
-	fmt.Println("-------------------------------------------")
+	fmt.Println()
 	if err != nil {
 		fmt.Println("Exception occurred while executeQuery response unmarshal")
 	}

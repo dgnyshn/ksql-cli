@@ -20,8 +20,9 @@ func ExecutePrintTopic(query string) {
 	r := model.Request{
 		Ksql: strings.TrimSpace(query),
 	}
+
 	byteQuery, _ := json.Marshal(r)
-	req, err := http.NewRequest("POST", config.DefaultKsqlServerURL+"/query", bytes.NewBuffer(bytes.ToLower(byteQuery)))
+	req, err := http.NewRequest("POST", config.DefaultKsqlServerURL+"/query", bytes.NewBuffer(byteQuery))
 	req = req.WithContext(ctx)
 
 	if err != nil {
@@ -43,7 +44,6 @@ func ExecutePrintTopic(query string) {
 
 		if len(string(line)) > 1 {
 			fmt.Println(string(line))
-			fmt.Println(len(string(line)))
 		}
 
 		if err != nil {

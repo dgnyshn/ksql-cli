@@ -1,7 +1,7 @@
 package model
 
 type Request struct {
-	Ksql string
+	Ksql string `json:"ksql"`
 }
 
 type KsqlStreamResponse struct {

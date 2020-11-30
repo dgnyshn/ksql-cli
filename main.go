@@ -29,7 +29,7 @@ func completer(t prompt.Document) []prompt.Suggest {
 }
 
 func executor(in string) {
-	command := GetFormattedCommand(in)
+	command := in
 	if command == "exit" {
 		os.Exit(0)
 	} else if command == "clear" {
@@ -43,7 +43,7 @@ func executor(in string) {
 	case "list":
 		lastCommand := splitCommand[1]
 		switch lastCommand {
-		case "streams", "streams;":
+		case "stream", "streams", "streams;":
 			streams.ListStreams()
 			break
 		case "tables", "tables;":
@@ -68,7 +68,7 @@ func executor(in string) {
 	case "healthcheck":
 		serverStatus.HealthCheck()
 		break
-	case "create", "drop", "terminate":
+	case "create", "drop", "terminate", "insert":
 		streams.ExecuteCrudStatement(in)
 		break
 
@@ -107,6 +107,7 @@ func isEnvUpdate(commands []string) bool {
 func main() {
 	command := prompt.New(executor, completer,
 		prompt.OptionTitle("KsqlServer Prompt"),
+		prompt.OptionPrefix("ksql-cli-> "),
 		prompt.OptionPrefixBackgroundColor(prompt.DefaultColor),
 		prompt.OptionSuggestionTextColor(prompt.Black),
 	)
